@@ -508,3 +508,23 @@ Gdk-Message: 03:03:52.306: firefox: Fatal IO error 11 (Recurso temporariamente i
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1642531822397	geckodriver	INFO	Listening on 127.0.0.1:35995
+1642531822844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50183" "-no-remote" "-profile" "/tmp/rust_mozprofileUcbauy"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1642531825905	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUcbauy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50183/devtools/browser/85268168-412a-4ad7-9d85-bd798955f248
+1642531829984	Marionette	INFO	Listening on port 46657
+1642531830521	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sistema.bonitour.com.br"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sistema.bonitour.com.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sistema.bonitour.com.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sistema.bonitour.com.br"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1642531851722	Marionette	INFO	Stopped listening on port 46657
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
