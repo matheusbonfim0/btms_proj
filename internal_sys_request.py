@@ -1,5 +1,6 @@
 import requests
 from pandas import json_normalize
+import pandas as pd
 import json
 
 cookies = {
@@ -32,5 +33,6 @@ params = (
 data = 'bel.6;e,\'fcp,310,;e,\'load,3ab,'
 
 response = requests.post('https://bam-cell.nr-data.net/events/1/de73bebc6e', headers=headers, params=params, cookies=cookies, data=data)
-json = json_normalize(response.json())
-print(json)
+
+df = pd.read_html(response.content)
+print(df)
