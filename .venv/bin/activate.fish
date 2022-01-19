@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/matheus/Documentos/python/btms_proj/.venv"
+set -gx VIRTUAL_ENV "/home/igor/Documentos/python/btms_proj/.venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
