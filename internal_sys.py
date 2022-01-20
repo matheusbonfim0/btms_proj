@@ -1,6 +1,6 @@
 from selenium.webdriver import Firefox
 from time import sleep
-from btms import date 
+from btms import date, dados_btms 
 from bs4 import BeautifulSoup
 
 
@@ -65,3 +65,5 @@ for x in range(i_impar_det):
         soup.find_all('tr', { 'class' : 'impar_detalhe'})[x].find_all('td')[3].text,
         soup.find_all('tr', { 'class' : 'impar_detalhe'})[x].find_all('td')[4].text[9:-8],
         )
+
+dados_btms()

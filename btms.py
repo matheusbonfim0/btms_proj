@@ -17,19 +17,19 @@ response = requests.post('https://btms5.com.br/ws/wsbtms.php', headers=headers, 
 json = json_normalize(response.json())
 json.columns
 transfer = json.loc[0][0]
-
 i = len(transfer)
 
-for x in range(i):
-    obj = transfer[x]
-    if obj.get('id_grupo') == '*':
-        continue
-    else:        
-        print(obj.get('empresa'),
-              obj.get('ida_h_saida'),
-              obj.get('rota'),
-              #obj.get('saida_data'),
-              obj.get('reserva_numero'),
-              obj.get('id_grupo'),
-              obj.get('r_pax')
-             )
+def dados_btms():
+    for x in range(i):
+        obj = transfer[x]
+        if obj.get('id_grupo') == '*':
+            continue
+        else:        
+            print(obj.get('empresa'),
+                obj.get('ida_h_saida'),
+                obj.get('rota'),
+                #obj.get('saida_data'),
+                obj.get('reserva_numero'),
+                obj.get('id_grupo'),
+                obj.get('r_pax')
+                )
