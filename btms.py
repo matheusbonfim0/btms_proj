@@ -19,7 +19,7 @@ json.columns
 transfer = json.loc[0][0]
 i = len(transfer)
 
-def dados_btms():
+class dados_btms:
     for x in range(i):
         obj = transfer[x]
         if obj.get('id_grupo') == '*':
@@ -33,3 +33,4 @@ def dados_btms():
                 obj.get('id_grupo'),
                 obj.get('r_pax')
                 )
+    
